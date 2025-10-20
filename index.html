@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Entrega de Proyecto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi Proyecto Web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-container">
+                <div class="card">
+                    <h3>Producto 1</h3>
+                    <p>Descripción breve del producto 1. Atractivo y funcional.</p>
+                </div>
+                <div class="card">
+                    <h3>Producto 2</h3>
+                    <p>Descripción breve del producto 2. Innovador y de alta calidad.</p>
+                </div>
+                <div class="card">
+                    <h3>Producto 3</h3>
+                    <p>Descripción breve del producto 3. La mejor opción del mercado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas">
+            <h2>Reseñas de Clientes</h2>
+            <div class="grid-container">
+                <div class="grid-item">"Excelente servicio, lo recomiendo." - Cliente A</div>
+                <div class="grid-item">"El producto superó mis expectativas." - Cliente B</div>
+                <div class="grid-item">"Entrega rápida y atención al detalle." - Cliente C</div>
+                <div class="grid-item">"¡Volveré a comprar sin duda!" - Cliente D</div>
+            </div>
+        </section>
+
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <p>Una imagen representativa de nuestro trabajo:</p>
+            <img src="https://via.placeholder.com/600x300" alt="Imagen descriptiva del proyecto">
+            <p>Y un video explicativo:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Envíanos un mensaje y te responderemos a la brevedad.</p>
+            <form action="https://formspree.io/f/your-email-here" method="POST" class="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Proyecto Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
