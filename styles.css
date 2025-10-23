@@ -1,4 +1,4 @@
-/* Implementación de Google Fonts y estilos generales */
+/* --- ESTILOS GENERALES Y FUENTES --- */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,7 +8,23 @@ body {
     line-height: 1.6;
 }
 
-/* Estilos para el Header */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
 header {
     background-color: #333;
     color: #fff;
@@ -16,10 +32,12 @@ header {
     text-align: center;
 }
 
-/* Estilos para la Lista de Navegación */
 nav {
     background-color: #444;
     padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav ul {
@@ -40,23 +58,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-/* 4. Diseño con Flexbox para la sección "Productos" */
+/* --- SECCIÓN DE PRODUCTOS (FLEXBOX) --- */
 .productos-container {
     display: flex;
     justify-content: space-around;
@@ -74,7 +76,15 @@ h2 {
     text-align: center;
 }
 
-/* 4. Diseño con Grid para la sección "Reseñas" */
+.card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* --- SECCIÓN DE RESEÑAS (GRID) --- */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -88,18 +98,36 @@ h2 {
     font-style: italic;
 }
 
-/* 5. Contenido Multimedia */
-#multimedia img, #multimedia iframe {
-    max-width: 100%;
-    height: auto;
+/* --- SECCIÓN MULTIMEDIA --- */
+#multimedia img {
+    max-width: 800px;
+    width: 100%;
     display: block;
     margin: 20px auto;
     border-radius: 8px;
 }
 
-/* 3. Propiedad background y 4. Diseño Responsivo para "Contacto" */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding-top: 56.25%; /* Proporción 16:9 */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- SECCIÓN DE CONTACTO --- */
 #contacto {
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Fondo degradado */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
     padding: 40px;
     border-radius: 8px;
     color: white;
@@ -138,7 +166,7 @@ h2 {
     background-color: #555;
 }
 
-/* Estilos para el Footer */
+/* --- PIE DE PÁGINA (FOOTER) --- */
 footer {
     text-align: center;
     padding: 20px;
@@ -146,7 +174,7 @@ footer {
     color: white;
 }
 
-/* 4. Media Queries para adaptar a diferentes tamaños de pantalla */
+/* --- DISEÑO RESPONSIVO (MEDIA QUERIES) --- */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
